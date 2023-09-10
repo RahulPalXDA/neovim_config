@@ -1,0 +1,16 @@
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+vim.keymap.set('n', '<c-n>', ':tabnew<CR>')
+vim.keymap.set('i', '<c-n>', '<esc>:tabnew<CR>')
+vim.keymap.set('n', '<c-Right>', ':tabn<CR>')
+vim.keymap.set('i', '<c-Right>', '<esc>:tabn<CR>')
+vim.keymap.set('n', '<c-Left>', ':tabp<CR>')
+vim.keymap.set('i', '<c-Left>', '<esc>:tabp<CR>')
+
+vim.keymap.set('n', 'q', ':q!<CR>')
+vim.keymap.set('n', '<c-s>', ':w<CR>')
+vim.keymap.set('i', '<c-s>', '<esc>:w<CR>')
